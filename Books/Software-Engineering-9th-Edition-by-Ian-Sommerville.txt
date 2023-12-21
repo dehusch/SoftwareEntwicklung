@@ -1,4 +1,0 @@
-Chapter1
-1.1 Understand why software Engineering is important.
-1.2 Software Engineering Ethics
-1.3 Case studies
