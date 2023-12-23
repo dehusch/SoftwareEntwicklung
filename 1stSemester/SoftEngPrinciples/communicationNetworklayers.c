@@ -4,31 +4,29 @@ int main() {
     int choice;
 
     do {
-        printf("Communication Network Layers:\n");
-        printf("1. Physical Layer\n");
-        printf("2. Data Link Layer\n");
-        printf("3. Network Layer\n");
-        printf("4. Transport Layer\n");
-        printf("5. Application Layer\n");
+        printf("TCP/IP Reference Model - Network Communication Layers\n");
+        printf("1. Application Layer\n");
+        printf("2. Transport Layer\n");
+        printf("3. Internet Layer\n");
+        printf("4. Network Interface Layer (Link Layer)\n");
         printf("0. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
         switch (choice) {
             case 1:
-                printf("Physical Layer: This layer is responsible for the transmission and reception of raw bit streams over a physical medium.\n");
+                printf("Application Layer: This layer provides services directly to the end-user applications. 
+                        It includes protocols such as HTTP, FTP, SMTP, and DNS.\n");
                 break;
             case 2:
-                printf("Data Link Layer: This layer provides reliable transmission of data frames between two nodes connected by a physical layer.\n");
+                printf("Transport Layer: This layer is responsible for end-to-end communication between hosts. 
+                        It provides reliable and connection-oriented or unreliable and connectionless data transfer. It includes protocols such as TCP and UDP.\n");
                 break;
             case 3:
-                printf("Network Layer: This layer is responsible for the routing and forwarding of packets across multiple networks.\n");
+                printf("Internet Layer: This layer is responsible for routing packets across different networks. It provides logical addressing and fragmentation of data. It includes protocols such as IP and ICMP.\n");
                 break;
             case 4:
-                printf("Transport Layer: This layer provides end-to-end communication between two hosts and ensures reliable data delivery.\n");
-                break;
-            case 5:
-                printf("Application Layer: This layer provides services directly to the end user and supports network applications.\n");
+                printf("Network Interface Layer: This layer is responsible for the physical transmission of data over the network. It includes protocols such as Ethernet and Wi-Fi.\n");
                 break;
             case 0:
                 printf("Exiting...\n");
@@ -37,7 +35,10 @@ int main() {
                 printf("Invalid choice. Please try again.\n");
                 break;
         }
+
+        printf("\n");
     } while (choice != 0);
 
     return 0;
 }
+
